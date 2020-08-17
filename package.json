@@ -1,0 +1,39 @@
+{
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "add": "^2.0.6",
+    "cordova": "^10.0.0",
+    "cordova-android": "^9.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-fcm-with-dependecy-updated": {
+        "ANDROID_FCM_VERSION": "19.0.0",
+        "ANDROID_GRADLE_TOOLS_VERSION": "3.5.3",
+        "ANDROID_GOOGLE_SERVICES_VERSION": "4.3.3",
+        "ANDROID_DEFAULT_NOTIFICATION_ICON": "@mipmap/notification_icon"
+      },
+      "cordova-plugin-statusbar": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "cordova-plugin-fcm-plus": "git+https://github.com/guyromb/cordova-plugin-fcm-plus.git",
+    "cordova-plugin-fcm-with-dependecy-updated": "^7.0.9",
+    "cordova-plugin-statusbar": "2.4.3"
+  }
+}
